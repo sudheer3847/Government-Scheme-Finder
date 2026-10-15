@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0d9488 100%);
+    color: #334155;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 480px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 26px;
+    color: #1e3a8a;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.input-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+.input-group input, 
+.input-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-group input:focus, 
+.input-group select:focus {
+    border-color: #0d9488;
+    box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.15);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.hidden {
+    display: none;
+}
+
+#resultContainer {
+    margin-top: 25px;
+    border-top: 2px solid #f1f5f9;
+    padding-top: 20px;
+}
+
+#resultContainer h3 {
+    font-size: 18px;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.scheme-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 5px solid #0d9488;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.scheme-card h4 {
+    font-size: 16px;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.scheme-card p {
+    font-size: 13px;
+    color: #475569;
+    margin-bottom: 10px;
+}
+
+.scheme-card .docs {
+    font-size: 12px;
+    background: #e2e8f0;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    color: #1e293b;
+}
+
+.scheme-card .docs strong {
+    color: #0f766e;
+}
+
+.apply-btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+
+.apply-btn:hover {
+    background: #1d4ed8;
+}
