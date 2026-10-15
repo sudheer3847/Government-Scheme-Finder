@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Scheme Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🏛️ SchemeFinder Pro</h1>
+            <p>Discover government welfare benefits tailored just for you in seconds.</p>
+        </header>
+
+        <form id="schemeForm">
+            <div class="input-group">
+                <label for="age">Your Age</label>
+                <input type="number" id="age" placeholder="e.g., 22" required min="1" max="100">
+            </div>
+
+            <div class="input-group">
+                <label for="income">Annual Income (₹)</label>
+                <input type="number" id="income" placeholder="e.g., 250000" required min="0">
+            </div>
+
+            <div class="input-group">
+                <label for="category">Category / Profession</label>
+                <select id="category">
+                    <option value="all">General / All Categories</option>
+                    <option value="student">Student / Youth</option>
+                    <option value="farmer">Farmer / Agriculture</option>
+                    <option value="woman">Woman Entrepreneur</option>
+                    <option value="senior">Senior Citizen</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-primary">Find Eligible Schemes</button>
+        </form>
+
+        <div id="resultContainer" class="hidden">
+            <h3>Eligible Schemes For You</h3>
+            <div id="schemeResults"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
